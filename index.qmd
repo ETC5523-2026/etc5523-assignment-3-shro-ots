@@ -1,5 +1,5 @@
 ---
-title: "More Than Just a Statistic"
+title: "More Than Just A Statistic"
 listing:
   contents: posts
   sort: "date desc"

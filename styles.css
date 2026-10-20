@@ -37,3 +37,33 @@ body {
 .quarto-title-banner .title {
   color: #F3E9D8 !important;
 }
+
+.tldr-tile.callout {
+  background-color: #59652D !important;
+  border: 1px solid #59652D !important;
+  border-left: 5px solid #33231D !important;
+}
+
+.tldr-tile .callout-header,
+.tldr-tile .callout-body {
+  background-color: #59652D !important;
+  color: #F3E9D8 !important;
+}
+
+.tldr-tile .callout-icon {
+  display: none;
+}
+
+.reference-box {
+  border: 1px solid #8F9B55;
+  border-left: 4px solid #8F9B55;
+  border-radius: 0.3rem;
+  color: #33231D;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
+  overflow-wrap: anywhere;
+}
+
+.reference-box p:last-child {
+  margin-bottom: 0;
+}
