@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Hi, I’m Shruti!"
 image: profile.png
 about:
   template: jolla
@@ -16,4 +16,4 @@ about:
 
 ---
 
-Hi, I’m Shruti! I have a background in biostatistics and love following the clues in health data. I’m happiest when I can untangle a tricky question, work out what the data can and can’t tell us, and turn it into a clear story for people working to improve care.
+I have a background in biostatistics and love following the clues in health data. I’m happiest when I can untangle a tricky question, work out what the data can and can’t tell us, and turn it into a clear story for people working to improve care.
