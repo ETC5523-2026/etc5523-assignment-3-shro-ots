@@ -1,4 +1,39 @@
 /* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+.navbar-dark {
+  background-color: #2D0A16;
+}
+
+.quarto-title-banner {
+  background-color: #2D0A16;
+}
+
+.quarto-title-banner .title {
+  background-color: #F3E9D8;
+}
+
+#quarto-header .navbar {
+  background-color: #2D0A16 !important;
+}
+
+#quarto-header .navbar-brand,
+#quarto-header .nav-link {
+  color: #F3E9D8 !important;
+}
+
+#quarto-header .nav-link:hover {
+  color: #8F9B55 !important;
+}
+
+body {
+  background-color: #F3E9D8;
+  color: #33231D;
+}
+
+.quarto-title-banner .quarto-title,
+.quarto-title-banner .title {
+  background-color: transparent !important;
+}
+
+.quarto-title-banner .title {
+  color: #F3E9D8 !important;
 }
