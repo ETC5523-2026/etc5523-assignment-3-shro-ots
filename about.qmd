@@ -5,11 +5,11 @@ about:
   template: jolla
   links:
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/shro-ots
     - icon: linkedin
       text: LinkedIn
-      href: www.linkedin.com/in/shruti-pillai-309013228
+      href: https://www.linkedin.com/in/shruti-pillai-309013228
     - icon: envelope
       text: Email
       href: mailto:shrutipillai0987@gmail.com
