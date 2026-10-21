@@ -1,20 +1,19 @@
 ---
-title: "More Than Just A Statistic"
+title: "More Than Just Statistics"
 subtitle: "Biostatistics and visual storytelling to make complex findings easier to digest"
 page-layout: full
 title-block-banner: true
+body-classes: home-page
+listing:
+  fields: [date, title, description, categories]
+  contents: 
+    - posts/welcome/index.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  filter-ui: false
+  sort-ui: false
 ---
 
 ## Featured Projects
 
-::: {.featured-project}
-
-**HEALTH DATA · INFECTION PREVENTION · EPIDEMIOLOGY**
-
-### Why a Lower Hospital Rate Doesn’t Always Mean a Lower Burden
-
-A lower hospital prevalence can coexist with a higher estimated population-level burden. This story explores why the measures differ, and what hospital quality and safety teams might take from the comparison.
-
-[Read the story →](posts/welcome/index.qmd)
-
-:::

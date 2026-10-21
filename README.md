@@ -9,10 +9,6 @@ Why might infection prevalence be lower in hospitals, while population-level bur
 
 ## Who this story is for
 
-I wrote this with **public-hospital quality and safety managers** in mind. I look at why hospital prevalence and population burden can tell different parts of the story, and what that might mean when teams review infection-prevention priorities. The estimates cover five selected infections in Germany, so they aren't a ready-made answer for every hospital. My hope is that the post encourages readers to look beyond one rate and ask what other evidence could help them see the fuller picture.
-
-## A little bit about me
-
-With a background in biostatistics, I enjoy untangling tricky health questions, spotting what the data can (and can’t) tell us, and making the useful bits easier to see. I’m especially interested in health-service insights and performance reporting.
+This blog is written for hospital infection-prevention and quality-and-safety managers who need a concise, non-technical explanation of how HAI frequency can differ from population-level health burden and what that means for prevention priorities.
 
 **Come have a look around:** 

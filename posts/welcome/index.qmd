@@ -1,11 +1,13 @@
 ---
-title: "Why A Lower Hospital Rate Doesn't Always Mean A Lower Burden"
+title: "Why Lower Hospital Prevalence Doesn't Always Mean Lower Burden"
 author: "Shruti Pillai"
 date: "2026-10-18"
-categories: ["health data", "infection prevention", "epidemiology"]
+categories: ["Health Data", "Infection Prevention"]
+description: "A lower hospital prevalence can coexist with a higher estimated population-level burden. This story explores why the measures differ, and what hospital quality and safety teams might take from the comparison."
+bibliography: references.bib
 ---
 
-::: {.callout-note .tldr-tile title="TL;DR"}
+::: {.callout-note .tldr-tile title="⟡Long story short"}
 
 **Don’t just ask, “How many?” Ask, “How much harm?”** Looking at frequency alongside severity and patient outcomes gives infection-prevention teams a fuller starting point for deciding what to investigate next.
 
@@ -13,7 +15,7 @@ categories: ["health data", "infection prevention", "epidemiology"]
 
 How can a country have a relatively low prevalence of infection among hospital patients, yet a higher estimated burden across its population? It sounds like a mismatch, but the two measures answer different questions.
 
-[Zacher et al. (2019)](https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135) estimated the burden of five selected healthcare-associated infections (HAIs) in Germany and compared it with the EU/EEA. Germany's estimated burden was 308.2 disability-adjusted life years (DALYs) per 100,000 people, compared with 290.0 in the EU/EEA. DALYs combine years of healthy life lost through illness and premature death, so they capture health impact as well as case numbers.
+@zacher2019 estimated the burden of five selected healthcare-associated infections (HAIs) in Germany and compared it with the EU/EEA. Germany's estimated burden was 308.2 disability-adjusted life years (DALYs) per 100,000 people, compared with 290.0 in the EU/EEA. DALYs combine years of healthy life lost through illness and premature death, so they capture health impact as well as case numbers.
 
 That doesn't mean that hospital infection rates are unhelpful. It means they're only a part of the big picture. Let's look at what the comparison can tell us, and what it can't.
 
@@ -27,18 +29,85 @@ A population-level DALY rate looks beyond the patients in hospital and includes 
 
 Looking across the whole population gives a different view. The estimated rates for all three measures were higher in Germany than in the EU/EEA. The DALY uncertainty intervals overlap, though, so it’s best to describe this as a higher estimate, not a definite difference.
 
-| Estimated burden per 100,000 people | Germany, estimate (95% UI) | EU/EEA, estimate (95% UI) |
+@tbl-burden compares the estimated burden across Germany and the EU/EEA.
+
+| Estimated burden per 100,000 people | Germany | EU/EEA |
 |---|---:|---:|
-| HAIs | 592.1 (521.7-665.8) | 467.9 (456.2-480.2) |
-| Attributable deaths | 20.1 (13.4-28.2) | 15.3 (10.2-21.2) |
-| DALYs | 308.2 (221.2-416.3) | 290.0 (214.9-376.9) |
-*UI = uncertainty interval*
+| HAIs | 592.1 (521.7–665.8) | 467.9 (456.2–480.2) |
+| Attributable deaths | 20.1 (13.4–28.2) | 15.3 (10.2–21.2) |
+| DALYs | 308.2 (221.2–416.3) | 290.0 (214.9–376.9) |
+: Estimated burden of selected HAIs in Germany and the EU/EEA, with 95% uncertainty intervals. {#tbl-burden}
+
+Source: @zacher2019. UI = uncertainty interval.
 
 ## Cases and health impact tell different stories
 
 Urinary tract infections (UTIs) accounted for the largest share of estimated cases, about 45%, but 27% of estimated DALYs. Healthcare-associated pneumonia (HAP) and primary bloodstream infections (BSIs) made up about 28% of cases combined, yet 51% of DALYs.
 
 So the infections that occurred most often were not necessarily the ones contributing the most health loss. Looking at severity and premature death alongside case counts helps fill in that picture.
+
+As @fig-infection-shares makes this contrast easier to see. These are approximate shares for selected infection groups, not all HAIs [@zacher2019].
+
+```{r}
+#| echo: false
+#| label: fig-infection-shares
+#| fig-cap: "Approximate shares of estimated cases and DALYs for selected HAI groups in Germany, 2011–2012."
+#| fig-alt: "Grouped horizontal bars compare cases and DALYs. UTIs account for about 45% of cases and 27% of DALYs. Healthcare-associated pneumonia and primary bloodstream infections combined account for about 28% of cases and 51% of DALYs."
+#| fig-width: 8
+#| fig-height: 4.5
+#| out-width: "100%"
+#| fig-align: center
+
+library(ggplot2)
+
+share_data <- data.frame(
+  infection = factor(
+    rep(c("UTIs", "HAP + primary BSIs"), each = 2),
+    levels = c("HAP + primary BSIs", "UTIs")
+  ),
+  measure = factor(
+    rep(c("Cases", "DALYs"), times = 2),
+    levels = c("Cases", "DALYs")
+  ),
+  share = c(45, 27, 28, 51)
+)
+
+dodge <- position_dodge(width = 0.72)
+
+ggplot(share_data, aes(x = share, y = infection, fill = measure)) +
+  geom_col(position = dodge, width = 0.56) +
+  geom_text(
+    aes(label = paste0(share, "%")),
+    position = dodge,
+    hjust = -0.2,
+    size = 4,
+    color = "#33231D"
+  ) +
+  scale_fill_manual(
+    values = c("Cases" = "#59652D", "DALYs" = "#4a0018")
+  ) +
+  scale_x_continuous(
+    limits = c(0, 63),
+    breaks = seq(0, 60, 10),
+    labels = function(x) paste0(x, "%")
+  ) +
+  labs(x = "Share of estimates", y = NULL, fill = NULL) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.background = element_rect(fill = "#FFFAF2", color = NA),
+    panel.background = element_rect(fill = "#FFFAF2", color = NA),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_line(color = "#D9C9AB"),
+    axis.text = element_text(color = "#33231D"),
+    axis.text.y = element_text(face = "bold"),
+    axis.title.x = element_text(color = "#33231D"),
+    legend.position = "top",
+    legend.justification = "left",
+    legend.text = element_text(color = "#33231D"),
+    plot.margin = margin(10, 20, 10, 10)
+  )
+```
 
 ## What hospital teams can take from this
 
@@ -55,12 +124,3 @@ Treat the comparison as a way to understand why different measures matter, not a
 ## The takeaway
 
 While hospital prevalence still matters, it just doesn’t tell the whole story on its own. Pairing it with infection severity, patient outcomes, and current local data gives teams a more useful picture when deciding where prevention efforts may help most.
-
-::: {.reference-box}
-
-**Reference**
-
-Zacher, Benedikt, Sebastian Haller, Niklas Willrich, et al. 2019. “Application of a new methodology and R package reveals a high burden of healthcare-associated infections in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012.” *Eurosurveillance* 24 (46): 1900135. [https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135](https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135)
-
-:::
-

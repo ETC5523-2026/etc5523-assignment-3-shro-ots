@@ -18,7 +18,7 @@ title-block-banner: true
 
 ::: {.featured-project}
 
-**BLOG POST · HEALTH DATA · INFECTION PREVENTION**
+**HEALTH DATA · INFECTION PREVENTION**
 
 ### Why a Lower Hospital Rate Doesn’t Always Mean a Lower Burden
 
