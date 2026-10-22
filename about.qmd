@@ -1,13 +1,126 @@
 ---
-title: "About"
-image: profile.jpg
+title: "⋆⊹˚₊ Hi, I’m Shruti! ₊˚⊹⋆"
+image: profile.png
 about:
   template: jolla
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
+      text: GitHub
+      href: https://github.com/shro-ots
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shruti-pillai-309013228
+    - icon: envelope
+      text: Email
+      href: mailto:shrutipillai0987@gmail.com
 
 ---
+::: {.about-dark}
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I started out in biomedical science, where I got to explore the science behind health and medicine. Now, completing a Master's in Biostatistics, I get to pair that curiosity with data: asking questions, finding patterns, and thinking about what they mean for people.
+
+The creative side matters to me just as much as digging into data does. I love taking complicated ideas and making them clearer through visual storytelling, thoughtful design, and useful data tools. A good chart or dashboard isn’t just pretty; it helps someone notice what matters *and* decide what to do next.
+
+This portfolio is where those interests meet: biomedical science, biostatistics, and design-minded communication. I’m especially interested in health-service insights and making healthcare data more useful to the people working with it.
+
+⟡
+:::
+
+:::: {.skills-grid}
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <path d="M20 7v5h-5"/>
+  <path d="M4 17v-5h5"/>
+  <path d="M5.6 9A7 7 0 0 1 17.5 6.5L20 12"/>
+  <path d="M18.4 15A7 7 0 0 1 6.5 17.5L4 12"/>
+</svg>
+</div>
+
+### Quality Improvement
+
+Using feedback and service data to spot practical ways to improve healthcare processes.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <path d="M3 3v18h18"/>
+  <path d="M7 14v3M12 10v7M17 6v11"/>
+  <path d="m6 11 4-3 4 2 5-5"/>
+</svg>
+</div>
+
+### Analytics
+
+Finding patterns in data and turning them into useful insights.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <rect x="3" y="4" width="18" height="16" rx="2"/>
+  <circle cx="8.5" cy="9" r="1.5"/>
+  <path d="m21 15-5-5L5 20"/>
+</svg>
+</div>
+
+### Visual Storytelling
+
+Designing clear visuals that make complex findings easier to follow.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <path d="m8 8-4 4 4 4"/>
+  <path d="m16 8 4 4-4 4"/>
+  <path d="m14 5-4 14"/>
+</svg>
+</div>
+
+### Programming
+
+Proficient in R, Python, and SQL.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <rect x="3" y="4" width="18" height="16" rx="2"/>
+  <path d="M3 9h18M9 9v11M15 9v5"/>
+</svg>
+</div>
+
+### Dashboard Design
+
+Designing useful dashboards that help people spot patterns and decide what to look at next.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <path d="M20.5 11.5a8 8 0 0 1-8 8H7l-4 2v-6a8 8 0 1 1 17.5-4z"/>
+  <path d="M8 10h8M8 14h5"/>
+</svg>
+</div>
+
+### Communication
+
+Explaining ideas clearly to different audiences.
+:::
+
+::: {.skill-tile}
+<div class="skill-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24">
+  <path d="M5 21V4"/>
+  <path d="M5 5c5-3 9 3 14 0v10c-5 3-9-3-14 0"/>
+</svg>
+</div>
+
+### Leadership
+
+Taking initiative and helping a group work toward a shared goal.
+:::
+::::

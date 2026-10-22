@@ -1,14 +1,19 @@
 ---
-title: "ETC5523 Blog Assessment"
+title: "More Than Just Statistics"
+subtitle: "Biostatistics and visual storytelling to make complex findings easier to digest"
+page-layout: full
+title-block-banner: true
+body-classes: home-page
 listing:
-  contents: posts
+  fields: [date, title, description, categories]
+  contents: 
+    - posts/welcome/index.qmd
   sort: "date desc"
   type: default
   categories: true
-  sort-ui: false
   filter-ui: false
-page-layout: full
-title-block-banner: true
+  sort-ui: false
 ---
 
+## Featured Projects
 

@@ -1,4 +1,513 @@
 /* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+.navbar-dark {
+  background-color: #4a0018;
+}
+
+.quarto-title-banner {
+  background-color: #4a0018;
+}
+
+.quarto-title-banner .title {
+  background-color: #FFFAF2;
+}
+
+#quarto-header .navbar {
+  background-color: #4a0018 !important;
+}
+
+#quarto-header .navbar-brand,
+#quarto-header .nav-link {
+  color: #FFFAF2 !important;
+}
+
+#quarto-header .nav-link:hover {
+  color: #8F9B55 !important;
+}
+
+#title-block-header .subtitle,
+#title-block-header .description,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .description {
+  color: #FFFAF2 !important;
+  opacity: 1 !important;
+}
+
+body {
+  background-color: #FFFAF2;
+  color: #33231D;
+}
+
+.quarto-title-banner .quarto-title,
+.quarto-title-banner .title {
+  background-color: transparent !important;
+}
+
+.quarto-title-banner .title {
+  color: #FFFAF2 !important;
+}
+
+.listing-categories a,
+.quarto-category {
+  color: #4a0018 !important;
+  background-color: #FFFAF2 !important;
+  border: 1px solid #D9C9AB !important;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.listing-categories a:hover,
+.quarto-category:hover {
+  color: #FFFAF2 !important;
+  background-color: #59652D !important;
+  border-color: #59652D !important;
+}
+
+.listing-categories a:focus-visible,
+.quarto-category:focus-visible {
+  outline: 2px solid #FFFAF2;
+  outline-offset: 3px;
+}
+
+/* Project listing */
+.quarto-post {
+  max-width: 820px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #FFFAF2 !important;
+  border: 1px solid #D9C9AB !important;
+  border-left: 5px solid #59652D !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 22px rgba(74, 0, 24, 0.08);
+}
+
+.quarto-post .listing-title a {
+  color: #4a0018 !important;
+  text-decoration: none;
+}
+
+.quarto-post .listing-title a:hover {
+  color: #59652D !important;
+}
+
+.quarto-post {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.quarto-post .body {
+  grid-column: 1;
+}
+
+.quarto-post .metadata {
+  display: block !important;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .quarto-post {
+    grid-template-columns: 1fr;
+  }
+
+  .quarto-post .metadata {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+/* Article links */
+#quarto-document-content p a,
+#quarto-document-content .csl-entry a {
+  color: #59652D;
+  text-decoration-color: #A8B278;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+#quarto-document-content p a:hover,
+#quarto-document-content .csl-entry a:hover {
+  color: #4a0018;
+  text-decoration-color: #4a0018;
+}
+
+/* Graph formatting */
+#fig-infection-shares img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #D9C9AB;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* Bibliography panel */
+#quarto-appendix,
+#quarto-appendix #references,
+#quarto-appendix #refs,
+#quarto-appendix .references,
+#quarto-appendix .csl-entry,
+.reference-box {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+#quarto-appendix {
+  margin-top: 2rem;
+}
+
+#quarto-appendix h2 {
+  color: #4a0018;
+  border-bottom: 1px solid #D9C9AB;
+  padding-bottom: 0.55rem;
+}
+
+#quarto-appendix .csl-entry {
+  color: #33231D;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+/* tldr card */
+
+.tldr-tile.callout {
+  background-color: #59652D !important;
+  border: 1px solid #59652D !important;
+  border-left: 5px solid #33231D !important;
+}
+
+.tldr-tile .callout-header,
+.tldr-tile .callout-body {
+  background-color: #59652D !important;
+  color: #FFFAF2 !important;
+}
+
+.tldr-tile .callout-icon {
+  display: none;
+}
+
+/* Featured project card */
+
+.featured-project {
+  max-width: 820px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #FFFAF2;
+  border: 1px solid #D9C9AB;
+  border-left: 5px solid #59652D;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 22px rgba(45, 10, 22, 0.08);
+}
+
+.featured-project a {
+  color: #59652D;
+  font-weight: 600;
+}
+
+.featured-project a:hover {
+  color: #4a0018;
+}
+
+/* Project filter buttons */
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 2rem 0;
+}
+
+.project-filter {
+  border: 1px solid #59652D;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #33231D;
+  font: inherit;
+  cursor: pointer;
+}
+
+.project-filter:hover,
+.project-filter.active {
+  background: #59652D;
+  color: #FFFAF2;
+}
+
+.project-filter:focus-visible {
+  outline: 3px solid #4a0018;
+  outline-offset: 3px;
+}
+
+.project-section[hidden] {
+  display: none !important;
+}
+
+/* Skills tiles for about page */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.skill-tile {
+  box-sizing: border-box;
+  background: #FFFAF2;
+  border: 1px solid #D9C9AB;
+  border-top: 4px solid #59652D;
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  color: #33231D;
+}
+
+.skill-icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 0.9rem;
+  border-radius: 50%;
+  background: #E9DFC9;
+  color: #59652D;
+}
+
+.skill-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.skill-tile h3 {
+  color: #4a0018;
+  text-align: center;
+  margin-top: 0;
+}
+
+.skill-tile p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-grid > .skill-tile:last-child {
+  grid-column: 2;
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills-grid > .skill-tile:last-child {
+    grid-column: 1 / -1;
+    width: calc((100% - 1rem) / 2);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid > .skill-tile:last-child {
+    grid-column: auto;
+    width: auto;
+  }
+}
+
+/*Theming for about page*/
+.quarto-about-jolla {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  color: #FFFAF2;
+}
+
+.quarto-about-jolla::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #4a0018;
+}
+
+.quarto-about-jolla h1,
+.quarto-about-jolla h2,
+.quarto-about-jolla .title {
+  color: #FFFAF2;
+}
+
+.quarto-about-jolla img.about-image {
+  border: 4px solid #DCCB9B;
+}
+
+body:has(.quarto-about-jolla),
+body:has(.quarto-about-jolla) #quarto-content,
+body:has(.quarto-about-jolla) #quarto-document-content {
+  background-color: #4a0018;
+}
+
+body:has(.quarto-about-jolla) #quarto-document-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.quarto-about-jolla .about-links a {
+  color: #FFFAF2 !important;
+  background: transparent !important;
+  border: 1px solid #D9C9AB !important;
+  border-radius: 0.5rem;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.quarto-about-jolla .about-links a:hover,
+.quarto-about-jolla .about-links a:focus-visible {
+  color: #FFFAF2 !important;
+  background: #59652D !important;
+  border-color: #59652D !important;
+}
+
+.quarto-about-jolla .about-links a:focus-visible {
+  outline: 2px solid #FFFAF2;
+  outline-offset: 3px;
+}
+
+/* Olive-green background for the written bio */
+.about-dark {
+  background: #59652D;
+  color: #FFFAF2;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 0.75rem;
+}
+
+.about-dark p {
+  color: #FFFAF2;
+}
+
+.about-dark a {
+  color: #F3DBA0;
+}
+
+/* Making the title banner a homepage hero */
+body.home-page .quarto-title-banner {
+  min-height: 480px;
+  background-image:
+    linear-gradient(
+      165deg,
+      #4a0018 0%,
+      #4a0018 20%,
+      rgba(74, 0, 24, 0.88) 30%,
+      rgba(74, 0, 24, 0.2) 100%
+    ),
+    url("hero1.png") !important;
+  background-size: 100% 100%, cover !important;
+  background-position: center, right center !important;
+  background-repeat: no-repeat !important;
+}
+
+body.home-page .quarto-title-banner .quarto-title {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1680px;
+  margin-inline: auto !important;
+  padding-right: min(42%, 620px) !important;
+}
+
+body.home-page .quarto-title-banner .title {
+  max-width: 18ch;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.08;
+}
+
+body.home-page .quarto-title-banner .subtitle {
+  max-width: 42rem;
+}
+
+@media (max-width: 700px) {
+  body.home-page .quarto-title-banner {
+    min-height: 340px;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(74, 0, 24, 0.94),
+        rgba(74, 0, 24, 0.78)
+      ),
+      url("hero1.png") !important;
+    background-position: center, 65% center !important;
+  }
+
+  body.home-page .quarto-title-banner .quarto-title {
+    padding-right: 0 !important;
+  }
+}
+
+#quarto-document-content a.tldr-jump {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid #4a0018;
+  border-radius: 0.5rem;
+  background: #4a0018;
+  color: #FFFAF2 !important;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+#quarto-document-content a.tldr-jump:hover {
+  border-color: #59652D;
+  background: #59652D;
+}
+
+#quarto-document-content a.tldr-jump:focus-visible {
+  outline: 3px solid #59652D;
+  outline-offset: 3px;
+}
+
+.action-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.action-tile {
+  box-sizing: border-box;
+  padding: 1.25rem;
+  background: #59652D;
+  color: #FFFAF2;
+  border: 1px solid #59652D;
+  border-radius: 0.75rem;
+}
+
+.action-tile h3 {
+  margin-top: 0;
+  color: #FFFAF2;
+}
+
+.action-tile p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .action-tiles {
+    grid-template-columns: 1fr;
+  }
 }
