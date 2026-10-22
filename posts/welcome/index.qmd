@@ -47,7 +47,7 @@ Here’s another twist: urinary tract infections (UTIs) made up about 45% of est
 
 In other words, the infections that happen most often are not necessarily the ones linked to the greatest health loss. Looking at cases alongside severity and premature death gives us a fuller picture.
 
-Figure @fig-infection-shares makes the contrast easy to spot. The bars compare approximate shares for selected infection groups only- not all of the HAIs studied [@zacher2019].
+@fig-infection-shares makes the contrast easy to spot. The bars compare approximate shares for selected infection groups only- not all of the HAIs studied [@zacher2019].
 
 ```{r}
 #| echo: false
