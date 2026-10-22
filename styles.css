@@ -453,3 +453,61 @@ body.home-page .quarto-title-banner .subtitle {
     padding-right: 0 !important;
   }
 }
+
+#quarto-document-content a.tldr-jump {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid #4a0018;
+  border-radius: 0.5rem;
+  background: #4a0018;
+  color: #FFFAF2 !important;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+#quarto-document-content a.tldr-jump:hover {
+  border-color: #59652D;
+  background: #59652D;
+}
+
+#quarto-document-content a.tldr-jump:focus-visible {
+  outline: 3px solid #59652D;
+  outline-offset: 3px;
+}
+
+.action-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.action-tile {
+  box-sizing: border-box;
+  padding: 1.25rem;
+  background: #59652D;
+  color: #FFFAF2;
+  border: 1px solid #59652D;
+  border-radius: 0.75rem;
+}
+
+.action-tile h3 {
+  margin-top: 0;
+  color: #FFFAF2;
+}
+
+.action-tile p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .action-tiles {
+    grid-template-columns: 1fr;
+  }
+}

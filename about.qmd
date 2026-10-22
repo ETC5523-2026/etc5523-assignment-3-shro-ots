@@ -17,9 +17,9 @@ about:
 ---
 ::: {.about-dark}
 
-I started out in biomedical science, where I got to explore the science behind health and medicine. Now, in my Master of Biostatistics at Monash, I get to pair that curiosity with data: asking questions, finding patterns, and thinking about what they mean for people.
+I started out in biomedical science, where I got to explore the science behind health and medicine. Now, completing a Master's in Biostatistics, I get to pair that curiosity with data: asking questions, finding patterns, and thinking about what they mean for people.
 
-The creative side matters to me just as much. I love taking complicated ideas and making them clearer through visual storytelling, thoughtful design, and useful data tools. A good chart or dashboard isn’t just pretty; it helps someone notice what matters and decide what to do next.
+The creative side matters to me just as much as digging into data does. I love taking complicated ideas and making them clearer through visual storytelling, thoughtful design, and useful data tools. A good chart or dashboard isn’t just pretty; it helps someone notice what matters *and* decide what to do next.
 
 This portfolio is where those interests meet: biomedical science, biostatistics, and design-minded communication. I’m especially interested in health-service insights and making healthcare data more useful to the people working with it.
 
