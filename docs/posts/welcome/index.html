@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shruti Pillai">
+<meta name="dcterms.date" content="2026-10-18">
+<meta name="description" content="A lower hospital prevalence can coexist with a higher estimated population-level burden. This story explores why the measures differ, and what hospital quality and safety teams might take from the comparison.">
+
+<title>Why Lower Hospital Prevalence Doesn’t Always Mean Lower Burden – ⟡ Shruti Pillai | Making Sense of Health Data ₊˚⊹⋆ ࣪</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-09571c32ab1e0ef2e27ef0cde9bcea14.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">⟡ Shruti Pillai | Making Sense of Health Data ₊˚⊹⋆ ࣪</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/shro-ots"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Why Lower Hospital Prevalence Doesn’t Always Mean Lower Burden</h1>
+                  <div>
+        <div class="description">
+          A lower hospital prevalence can coexist with a higher estimated population-level burden. This story explores why the measures differ, and what hospital quality and safety teams might take from the comparison.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Health Data</div>
+                <div class="quarto-category">Infection Prevention</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Shruti Pillai </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 18, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#a-hospital-snapshot-isnt-the-whole-story" id="toc-a-hospital-snapshot-isnt-the-whole-story" class="nav-link active" data-scroll-target="#a-hospital-snapshot-isnt-the-whole-story">A hospital snapshot isn’t the whole story</a></li>
+  <li><a href="#what-do-the-germanyeueea-numbers-show" id="toc-what-do-the-germanyeueea-numbers-show" class="nav-link" data-scroll-target="#what-do-the-germanyeueea-numbers-show">What do the Germany–EU/EEA numbers show?</a></li>
+  <li><a href="#more-cases-doesnt-always-mean-more-harm" id="toc-more-cases-doesnt-always-mean-more-harm" class="nav-link" data-scroll-target="#more-cases-doesnt-always-mean-more-harm">More cases doesn’t always mean more harm</a></li>
+  <li><a href="#what-hospital-teams-can-take-from-this" id="toc-what-hospital-teams-can-take-from-this" class="nav-link" data-scroll-target="#what-hospital-teams-can-take-from-this">What hospital teams can take from this</a></li>
+  <li><a href="#a-few-important-caveats" id="toc-a-few-important-caveats" class="nav-link" data-scroll-target="#a-few-important-caveats">A few important caveats</a></li>
+  <li><a href="#the-takeaway" id="toc-the-takeaway" class="nav-link" data-scroll-target="#the-takeaway">The takeaway</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><a href="#tldr" class="btn tldr-jump">⟡ Jump to Summary ↓</a></p>
+<p>At first glance, Germany’s healthcare-associated infection (HAI) story seems puzzling: hospital prevalence was lower than the European Union/European Economic Area (EU/EEA) average, yet its estimated health burden across the population was higher. How can both be true?</p>
+<p>These measures are looking at different things.</p>
+<p><span class="citation" data-cites="zacher2019">Zacher et al. (<a href="#ref-zacher2019" role="doc-biblioref">2019</a>)</span> looked at five selected HAIs. The study used German survey data from 2011 and compared the estimates with EU/EEA data from 2011–2012. Germany’s estimated burden was 308.2 disability-adjusted life years (DALYs) per 100,000 people (95% uncertainty interval [UI]: 221.2–416.3), compared with 290.0 (95% UI: 214.9–376.9) for the EU/EEA. DALYs combine years lived with disability and years of life lost through premature death, capturing health impact as well as case counts.</p>
+<p>So this is not a case of one measure being right and the other wrong. Hospital prevalence still matters; it just cannot tell us, on its own, how much health is lost across the wider population.</p>
+<section id="a-hospital-snapshot-isnt-the-whole-story" class="level2">
+<h2 class="anchored" data-anchor-id="a-hospital-snapshot-isnt-the-whole-story">A hospital snapshot isn’t the whole story</h2>
+<p>Think of hospital prevalence as a snapshot: it tells us how common HAIs were among the hospital patients surveyed at that moment. It does not tell the whole population-level story.</p>
+<p>DALYs capture two kinds of health loss. They account for time lived with disability as well as time lost to early death. This helps explain why a lower hospital prevalence can still come with a higher estimated population burden, since the two measures capture different parts of the health impact.</p>
+</section>
+<section id="what-do-the-germanyeueea-numbers-show" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-the-germanyeueea-numbers-show">What do the Germany–EU/EEA numbers show?</h2>
+<p>Looking across the whole population gives a different view. The estimated rates for all three measures were higher in Germany than in the EU/EEA. The DALY uncertainty intervals overlap, though, so it’s best to describe this as a higher estimate, not a definite difference.</p>
+<p><a href="#tbl-burden" class="quarto-xref">Table&nbsp;1</a> compares the estimated burden across Germany and the EU/EEA.</p>
+<div id="tbl-burden" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-burden-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Estimated burden of selected HAIs in Germany and the EU/EEA, with 95% uncertainty intervals.
+</figcaption>
+<div aria-describedby="tbl-burden-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estimated burden per 100,000 people</th>
+<th style="text-align: right;">Germany</th>
+<th style="text-align: right;">EU/EEA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HAIs</td>
+<td style="text-align: right;">592.1 (521.7–665.8)</td>
+<td style="text-align: right;">467.9 (456.2–480.2)</td>
+</tr>
+<tr class="even">
+<td>Attributable deaths</td>
+<td style="text-align: right;">20.1 (13.4–28.2)</td>
+<td style="text-align: right;">15.3 (10.2–21.2)</td>
+</tr>
+<tr class="odd">
+<td>DALYs</td>
+<td style="text-align: right;">308.2 (221.2–416.3)</td>
+<td style="text-align: right;">290.0 (214.9–376.9)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Source: <span class="citation" data-cites="zacher2019">Zacher et al. (<a href="#ref-zacher2019" role="doc-biblioref">2019</a>)</span>. UI = uncertainty interval.</p>
+</section>
+<section id="more-cases-doesnt-always-mean-more-harm" class="level2">
+<h2 class="anchored" data-anchor-id="more-cases-doesnt-always-mean-more-harm">More cases doesn’t always mean more harm</h2>
+<p>Here’s another twist: urinary tract infections (UTIs) made up about 45% of estimated cases but 27% of DALYs. Healthcare-associated pneumonia (HAP) and primary bloodstream infections (BSIs) together made up about 28% of cases but 51% of DALYs.</p>
+<p>In other words, the infections that happen most often are not necessarily the ones linked to the greatest health loss. Looking at cases alongside severity and premature death gives us a fuller picture.</p>
+<p><a href="#fig-infection-shares" class="quarto-xref">Figure&nbsp;1</a> makes the contrast easy to spot. The bars compare approximate shares for selected infection groups only- not all of the HAIs studied <span class="citation" data-cites="zacher2019">(<a href="#ref-zacher2019" role="doc-biblioref">Zacher et al. 2019</a>)</span>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-infection-shares" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Grouped horizontal bars compare cases and DALYs. UTIs account for about 45% of cases and 27% of DALYs. Healthcare-associated pneumonia and primary bloodstream infections combined account for about 28% of cases and 51% of DALYs." data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-infection-shares-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-infection-shares-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Grouped horizontal bars compare cases and DALYs. UTIs account for about 45% of cases and 27% of DALYs. Healthcare-associated pneumonia and primary bloodstream infections combined account for about 28% of cases and 51% of DALYs.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infection-shares-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Approximate shares of estimated cases and DALYs for selected HAI groups in Germany, 2011–2012.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="what-hospital-teams-can-take-from-this" class="level2">
+<h2 class="anchored" data-anchor-id="what-hospital-teams-can-take-from-this">What hospital teams can take from this</h2>
+<p>If you work in infection prevention or hospital quality, the question isn’t “Which hospital is worse?” This study uses national estimates; it can’t rank hospitals or tell one facility exactly what to change. A more useful question for your own setting is: which infections are common locally, and which are linked to the greatest harm?</p>
+<p>The study offers a useful example: UTIs accounted for more cases, while HAP and primary bloodstream infections made up a larger share of DALYs. That’s a reminder to look beyond counts, rather than treating these results as a ready-made priority list for your hospital.</p>
+<section id="for-a-local-review-try-three-steps" class="level3">
+<h3 class="anchored" data-anchor-id="for-a-local-review-try-three-steps">For a local review, try three steps:</h3>
+</section>
+<div class="action-tiles">
+<section id="check-local-patterns" class="level3 action-tile">
+<h3 class="anchored" data-anchor-id="check-local-patterns">1. Check local patterns</h3>
+<p>Start with current local surveillance. Which infections are showing up most often?</p>
+</section>
+<section id="look-beyond-case-counts" class="level3 action-tile">
+<h3 class="anchored" data-anchor-id="look-beyond-case-counts">2. Look beyond case counts</h3>
+<p>Compare those patterns with severity and patient-outcome information for the same infections.</p>
+</section>
+<section id="choose-what-to-investigate" class="level3 action-tile">
+<h3 class="anchored" data-anchor-id="choose-what-to-investigate">3. Choose what to investigate</h3>
+<p>Use your local context to decide what needs closer investigation and which prevention process to review. Keep tracking outcomes over time.</p>
+</section>
+</div>
+<p>Use the study as a lens for asking better questions, not as a hospital ranking or a prescription for one intervention.</p>
+</section>
+<section id="a-few-important-caveats" class="level2">
+<h2 class="anchored" data-anchor-id="a-few-important-caveats">A few important caveats</h2>
+<p>These are estimates, not a current count. The study covered five selected HAIs and used point-prevalence data from 2011–2012 plus modelling to estimate the wider population burden. So the findings depend on both the survey data and the model assumptions. The uncertainty intervals overlap for deaths and DALYs, too.</p>
+<p>Treat the comparison as a way to understand why different measures matter, not as a current benchmark for Germany or for any individual hospital.</p>
+</section>
+<section id="the-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="the-takeaway">The takeaway</h2>
+<p>So why did lower hospital prevalence not mean a lower burden? Because prevalence is a snapshot of infections in hospitals, while DALYs estimate health lost through illness and early death across the population. In this study, Germany’s estimated DALY rate for five selected HAIs was 308.2 per 100,000, compared with 290.0 in the EU/EEA; but the uncertainty intervals overlap, so the higher estimate is not definitive <span class="citation" data-cites="zacher2019">(<a href="#ref-zacher2019" role="doc-biblioref">Zacher et al. 2019</a>)</span>. UTIs accounted for more cases, while HAP and primary BSIs contributed a larger share of DALYs. For infection-prevention teams, the takeaway is simple: consider both how often infections occur and how much harm they cause, then use current local data to decide where to focus.</p>
+<div id="tldr" class="tldr-tile callout callout-style-default callout-note callout-titled" title="⟡Long story short">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>⟡Long story short
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Don’t just ask, “How many?” Ask, “How much harm?”</strong> For each infection, look at how often it occurs, how severe its outcomes are, and what happens to patients. Compare those patterns with current local surveillance. Then use them together to decide which infections need closer investigation and where prevention efforts may have the greatest impact.</p>
+</div>
+</div>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-zacher2019" class="csl-entry" role="listitem">
+Zacher, Benedikt, Sebastian Haller, Niklas Willrich, et al. 2019. <span>“Application of a New Methodology and r Package Reveals a High Burden of Healthcare-Associated Infections in Germany Compared to the Average in the European Union/European Economic Area, 2011 to 2012.”</span> <em>Eurosurveillance</em> 24 (46): 1900135. <a href="https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135">https://doi.org/10.2807/1560-7917.ES.2019.24.46.1900135</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
